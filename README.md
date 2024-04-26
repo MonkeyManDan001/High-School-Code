@@ -1,1 +1,1 @@
-All code here was made during my junior and senior years in high school. C++ was the programming language of my junior year and Java was the programming language of my senior year. C++ code can be found in the C++ branch and Java code can be found in the Java branch.
+All code here was made during my junior and senior years in high school. I learned C++ my junior year and Java my senior year. C++ code can be found in the C++ branch and Java code can be found in the Java branch.
