@@ -3,26 +3,24 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//---------------------------------------------------
-string Reverse(string word)
+//--------------------------------------
+void RevString(string s)
 {
-	int length = word.length();
-	string reverse = "";
-	for (int i = 0; i < length; length--)
-		reverse += word.substr(length - 1, 1);
-	return reverse;
+	int length = s.length();
+
+	if(length > 0)
+	{
+		string index = s.substr(1,length-1);
+		string index2 = s.substr(0,1);
+		RevString(index);
+		cout << index2;
+	}
 }
-//---------------------------------------------------
+//--------------------------------------
 int main()
 {
-	string word;
-
-	cout << "Please enter a word: ";
-	getline(cin, word);
-
-	string reverse = Reverse(word);
-
-	cout << "The reversed word is: " << reverse;
+	string s = "Mark Twain";
+	RevString(s);
 
 	return 0;
 }
