@@ -4,10 +4,19 @@
 using namespace std;
 int main()
 {
-	double a = 53.0;
-	double b = 2056.0;
-	double c = 2.0;
-	cout << "The average of grades " << a << " and " << b << " and " << c << " is " << (a+b+c)/3;
+	double num;
+	double num1;
+	int count2 = 5;
+
+	for (int count = 0; count < 5; count = count + 1)
+	{
+		cout << "Please enter " << count2 << " number(s): ";
+		count2--;
+		cin >> num1;
+		num += num1;
+	}
+
+	cout << "The average is: " << num / 5;
 
 	return 0;
 }
