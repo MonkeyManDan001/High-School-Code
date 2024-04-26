@@ -7,15 +7,27 @@ int main()
 	int length;
 	int width;
 
-
-	cout << "Please enter length: ";
+	cout << "Please enter the length: ";
 	cin >> length;
 
-	cout << "Please enter width: ";
-	cin >> width;
-	cout << endl;
+	if (length <= 0)
+	{
+		cout << "Length needs to be positive.";
+	}
+	else
+	{
+		cout << "Please enter the width: ";
+		cin >> width;
 
-	cout << "The area is " << length*width << " and the perimeter is " << (length*2)+(width*2);
+		if (width <= 0)
+		{
+			cout << "Width needs to be positive.";
+		}
+		else
+		{
+			cout << "Area: " << length*width;
+		}
+	}
 
 	return 0;
 }
